@@ -10,5 +10,5 @@ Cài đặt python trên máy và thư viện tkintervaf các thư viện khác
 Chạy tệp 'program.py', nhập chương trình cần biên dịch vào textbox sau đó nhận 'S...' và 'R...' ngôn ngữ cần biên dịch
 
 
-*Chạy chương trình với docker:*
+#Chạy chương trình với docker:*
 
