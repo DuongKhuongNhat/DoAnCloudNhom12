@@ -11,6 +11,7 @@
 
 
 *Chạy chương trình bằng docker images:(trên máy local)*
+
 -Cài đặt x11 và khỏi động Xming
 
 -Khởi động ddockerr và pull imange :19110418/doanclc về máy
