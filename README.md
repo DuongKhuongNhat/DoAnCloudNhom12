@@ -1,5 +1,5 @@
 # DoAnCloudNhom12
-Đồ án nhóm 12: tạo chương trình cho phép mở rộng ngôn ngữ biên dịch
+*Đồ án nhóm 12: tạo chương trình cho phép mở rộng ngôn ngữ biên dịch*
 
 Coppy tất cả các file vào cùng 1 thư mục
 
