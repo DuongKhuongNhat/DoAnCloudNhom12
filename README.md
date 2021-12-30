@@ -10,5 +10,13 @@ Cài đặt python trên máy và thư viện tkintervaf các thư viện khác
 Chạy tệp 'program.py', nhập chương trình cần biên dịch vào textbox sau đó nhận 'S...' và 'R...' ngôn ngữ cần biên dịch
 
 
-#Chạy chương trình với docker:*
+# Chạy chương trình bằng docker images:(trên máy local)
+Cài đặt x11 và khỏi động Xming
 
+Khởi động ddockerr và pull imange :19110418/doanclc về máy
+
+$ docker pull 19110418/doanclc:latest
+
+Sau đó run image với lệnh:
+
+$ docker run -it -v /var/run/docker.sock:/var/run/docker.sock 19110418/doanclc:latest
