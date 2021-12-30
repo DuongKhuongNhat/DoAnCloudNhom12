@@ -1,7 +1,7 @@
 # DoAnCloudNhom12
 *Đồ án nhóm 12: tạo chương trình cho phép mở rộng ngôn ngữ biên dịch*
 
--Coppy tất cả các file vào cùng 1 thư mục
+-Tải file về và unzip hoặc coppy tất cả các file vào 1 thư mục
 
 -Cài đặt Docker trên máy
 
