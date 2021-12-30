@@ -9,7 +9,7 @@ path=os.getcwd()
 txt = scrolledtext.ScrolledText(parent,width=80,height=30)
 txt.place(x=20, y=60)
 
-
+#Java
 def saveJava():
     stxt=txt.get(1.0,END)
     if os.path.isfile("./JAVA/Main.java"):
@@ -21,8 +21,12 @@ def RJava():
     os.system('docker build -t javaprogram .')
     os.system('docker run --rm -it javaprogram')
     os.chdir(path)
+savej=Button(parent,text="SJAVA",command=saveJava)
+savej.grid(column=0,row=1)
+runj=Button(parent,text="RJAVA",command=RJava)
+runj.grid(column=0,row=2)
 
-
+#C++
 def saveCpp():
     stxt=txt.get(1.0,END)
     if os.path.isfile("./c++/main.cpp"):
@@ -34,8 +38,12 @@ def RCpp():
     os.system('docker build -t cppprogram .')
     os.system('docker run --rm -it cppprogram')
     os.chdir(path)
+savec=Button(parent,text="SC++",command=saveCpp)
+savec.grid(column=1,row=1)
+runc=Button(parent,text="RC++",command=RCpp)
+runc.grid(column=1,row=2)
 
-
+#Python
 def savePy():
     stxt=txt.get(1.0,END)
     if os.path.isfile("./Python/main.py"):
@@ -47,7 +55,12 @@ def RPy():
     os.system('docker build -t pythonprogram .')
     os.system('docker run --rm -it pythonprogram')
     os.chdir(path)
+savep=Button(parent,text="SPython",command=savePy)
+savep.grid(column=2,row=1)
+runp=Button(parent,text="RPython",command=RPy)
+runp.grid(column=2,row=2)
 
+#Ruby
 def saveRuby():
     stxt=txt.get(1.0,END)
     if os.path.isfile("./Ruby/main.rb"):
@@ -59,7 +72,12 @@ def RRuby():
     os.system('docker build -t rubyprogram .')
     os.system('docker run --rm -it rubyprogram')
     os.chdir(path)
+saver=Button(parent,text="SRuby",command=saveRuby)
+saver.grid(column=3,row=1)
+runr=Button(parent,text="RRuby",command=RRuby)
+runr.grid(column=3,row=2)
 
+#Perl
 def savePerl():
     stxt=txt.get(1.0,END)
     if os.path.isfile("./Perl/main.pl"):
@@ -71,7 +89,12 @@ def RPerl():
     os.system('docker build -t perlprogram .')
     os.system('docker run --rm -it perlprogram')
     os.chdir(path)
+savepl=Button(parent,text="SPerl",command=savePerl)
+savepl.grid(column=4,row=1)
+runpl=Button(parent,text="RPerl",command=RPerl)
+runpl.grid(column=4,row=2)
 
+#PHP
 def savePHP():
     stxt=txt.get(1.0,END)
     if os.path.isfile("./PHP/main.php"):
@@ -83,7 +106,12 @@ def RPHP():
     os.system('docker build -t phplprogram .')
     os.system('docker run --rm -it phplprogram')
     os.chdir(path)
+savephp=Button(parent,text="SPHP",command=savePHP)
+savephp.grid(column=5,row=1)
+runphp=Button(parent,text="RPHP",command=RPHP)
+runphp.grid(column=5,row=2)
 
+#Rust
 def saveRust():
     stxt=txt.get(1.0,END)
     if os.path.isfile("./Rust/main.rs"):
@@ -99,36 +127,5 @@ savers=Button(parent,text="SRust",command=saveRust)
 savers.grid(column=6,row=1)
 runrs=Button(parent,text="RRust",command=RRust)
 runrs.grid(column=6,row=2)
-
-savej=Button(parent,text="SJAVA",command=saveJava)
-savej.grid(column=0,row=1)
-runj=Button(parent,text="RJAVA",command=RJava)
-runj.grid(column=0,row=2)
-
-savec=Button(parent,text="SC++",command=saveCpp)
-savec.grid(column=1,row=1)
-runc=Button(parent,text="RC++",command=RCpp)
-runc.grid(column=1,row=2)
-
-savep=Button(parent,text="SPython",command=savePy)
-savep.grid(column=2,row=1)
-runp=Button(parent,text="RPython",command=RPy)
-runp.grid(column=2,row=2)
-
-saver=Button(parent,text="SRuby",command=saveRuby)
-saver.grid(column=3,row=1)
-runr=Button(parent,text="RRuby",command=RRuby)
-runr.grid(column=3,row=2)
-
-savepl=Button(parent,text="SPerl",command=savePerl)
-savepl.grid(column=4,row=1)
-runpl=Button(parent,text="RPerl",command=RPerl)
-runpl.grid(column=4,row=2)
-
-savephp=Button(parent,text="SPHP",command=savePHP)
-savephp.grid(column=5,row=1)
-runphp=Button(parent,text="RPHP",command=RPHP)
-runphp.grid(column=5,row=2)
-
 
 parent.mainloop()
