@@ -5,7 +5,7 @@
 
 -Cài đặt Docker trên máy
 
--Cài đặt python trên máy và thư viện tkintervaf các thư viện khác
+-Cài đặt python trên máy và thư viện tkinter và các thư viện khác
 
 -Chạy tệp 'program.py', nhập chương trình cần biên dịch vào textbox sau đó nhận 'S...' và 'R...' ngôn ngữ cần biên dịch
 
@@ -21,3 +21,13 @@
 -Sau đó run image với lệnh:
 
   $ docker run -it -v /var/run/docker.sock:/var/run/docker.sock 19110418/doanclc:latest
+
+*Chạy trên máy ảo ec2:*
+
+-Cài đặt PuTTY, xming, cấu hình  x11 trên máy ec2 theo các bước ở trang web: https://aws.amazon.com/vi/blogs/compute/how-to-enable-x11-forwarding-from-red-hat-enterprise-linux-rhel-amazon-linux-suse-linux-ubuntu-server-to-support-gui-based-installations-from-amazon-ec2/
+
+-Coppy tất cả các file vào cùng 1 thư mục
+
+-Cập nhập python và cài đặt thư viện tkinter
+
+-Chạy file program.py bằng lệnh: $ python3 program.py
